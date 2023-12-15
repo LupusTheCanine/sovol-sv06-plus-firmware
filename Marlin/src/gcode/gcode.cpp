@@ -1054,6 +1054,14 @@ void GcodeSuite::process_parsed_command(const bool no_ok/*=false*/) {
       case 'S': case 'P': case 'R': break;                        // Invalid S, P, R commands already filtered
     #endif
 
+    case 'A': switch (parser.codenum) {
+      case 1: A1(); break;                                    // A1: Control Sovol SV06 Plus LCD state
+      default:
+        parser.unknown_command_warning();
+    }
+    break;
+
+
     default:
       #if ENABLED(WIFI_CUSTOM_COMMAND)
         if (wifi_custom_command(parser.command_ptr)) break;

@@ -302,6 +302,10 @@
  * "T" Codes
  *
  * T0-T3 - Select an extruder (tool) by index: "T<n> F<units/min>"
+ *
+ * "A" Codes - custom functionality
+ *
+ * A1 - Control Sovol SV06 Plus LCD state
  */
 
 #include "../inc/MarlinConfig.h"
@@ -1188,6 +1192,9 @@ private:
   #endif
 
   static void T(const int8_t tool_index);
+
+  // Firmware custom commands
+  static void A1();
 
 };
 
