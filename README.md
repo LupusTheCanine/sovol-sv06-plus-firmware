@@ -1,7 +1,8 @@
 # Sovol SV06 Plus firmware
 
-This is a customized version of
-[Sovol's Marlin firmware for the SV06 Plus 3D printer][sovol-sv06-plus-repo].
+This is
+[Sovol's Marlin firmware for the SV06 Plus 3D printer][sovol-sv06-plus-repo]
+merged with upstream Marlin.
 
 # Disclaimer
 
@@ -10,19 +11,12 @@ risks, including damage to your printer. I am not responsible for any undesired
 behavior or damage this firmware may cause. If you are not comfortable with
 these risks, do not use this firmware.
 
-# New features
+# Branch information
 
-* On bed leveling ([`G29`][G29]) completion, return the LCD to the leveling
-  screen. Originally the LCD would get stuck displaying the final leveling grid
-  with no option to exit if `G29` were invoked via serial.
+This `main-upstream` branch is Sovol's Marlin changes for the SV06 Plus merged
+into upstream Marlin, with no custom functionality.
 
-* Using [`M73`][M73], display progress and remaining time on the LCD just like
-  when printing from the SD card. The LCD's print cancel button now works to
-  stop the print, so long as the client supports the cancel host action (which
-  [Octoprint][octoprint] does). This is adapted from
-  [the LCD branch of daleye's fork][daleye-fork-lcd-branch].
-
-![Photo of Sovol SV06 Plus LCD showing progress during USB print][lcd-usb-print-photo]
+The [`main` branch][branch-main] is similar but with additional features.
 
 # Repository structure
 
@@ -120,6 +114,7 @@ the [GNU General Public License v3.0][firmware-license].
 [M73]: https://marlinfw.org/docs/gcode/M073.html
 [branch-sovol-marlin-merged-minimal]: https://github.com/smkent/sovol-sv06-plus-firmware/tree/sovol-marlin-merged-minimal
 [branch-sovol-marlin-merged]: https://github.com/smkent/sovol-sv06-plus-firmware/tree/sovol-marlin-merged
+[branch-main]: https://github.com/smkent/sovol-sv06-plus-firmware/tree/main
 [daleye-fork-lcd-branch]: https://github.com/daleye/SV06-PLUS/compare/42f16c0fdb5e7de022d615e0a665aed042e0be49...b5ec92a7a4487f183714fc544ca0ef5fd8cb180a
 [firmware-license]: /LICENSE
 [lcd-usb-print-photo]: /.static/lcd-usb-print-photo.jpg
