@@ -69,6 +69,6 @@ public:
 
 extern LevelingBilinear bbl;
 
-#define _GET_MESH_X(I) bbl.get_mesh_x(I)
-#define _GET_MESH_Y(J) bbl.get_mesh_y(J)
-#define Z_VALUES_ARR bbl.get_z_values()
+//#define _GET_MESH_X(I) bbl.get_mesh_x(I)
+//#define _GET_MESH_Y(J) bbl.get_mesh_y(J)
+//#define Z_VALUES_ARR bbl.get_z_values()
