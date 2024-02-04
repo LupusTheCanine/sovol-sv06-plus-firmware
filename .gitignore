@@ -142,7 +142,7 @@ vc-fileutils.settings
 .vscode/c_cpp_properties.json
 .vscode/launch.json
 .vscode/*.db
-
+.vscode/extensions.json
 #Simulation
 imgui.ini
 eeprom.dat
@@ -172,3 +172,4 @@ __pycache__
 eeprom.dat
 imgui.ini
 FW_OLD.bin
+
